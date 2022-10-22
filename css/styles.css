@@ -21,7 +21,7 @@ header{
     color: #0AE0F2;
     -webkit-text-stroke: 1px black;
 }
-.navbar-nav{
+.container-fluid{
     background-color:#0f8893;
     opacity: 0.8;
 }
