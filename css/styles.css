@@ -12,9 +12,15 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
 }
-header p{
+.supernatural__text{
     font-family: "supers";
     font-size: 10rem;
-    align-items: center;
+    text-align: center;
     text-shadow: 1rem;
+    color: #0AE0F2;
+    -webkit-text-stroke: 1px black;
+}
+.navbar navbar-expand-lg bg-light{
+    background-color:#0f8893;
+    opacity: 0.8;
 }
