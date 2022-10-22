@@ -9,8 +9,6 @@
     }
 header{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 .supernatural__text{
     font-family: "supers";
