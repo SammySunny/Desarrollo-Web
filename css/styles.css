@@ -7,10 +7,13 @@
     padding: 0px;
     box-sizing: border-box;
     }
+.background{
+    background-color:#282C30;
+}
 header{
     display: flex;
 }
-.supernatural__text{
+.supernatural__text p{
     font-family: "supers";
     font-size: 10rem;
     text-align: center;
@@ -18,7 +21,7 @@ header{
     color: #0AE0F2;
     -webkit-text-stroke: 1px black;
 }
-.navbar navbar-expand-lg bg-light{
+.navbar-nav{
     background-color:#0f8893;
     opacity: 0.8;
 }
