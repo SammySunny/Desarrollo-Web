@@ -1,71 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Winchester's Sons</title>
-        <link rel="stylesheet" href="./css/styles.css">        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    </head>
-    <body class="background">
-        <header>
-            <div class="supernatural__text">
-                <p>Supernatural</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="padre__index">
+    <header>
+        <div class="supernatural__text">
+            <p>Supernatural</p>
+        </div>     
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/personajes.html">Personajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/temporadas.html">Temporadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/curiosidades.html">Curiosidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactanos.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Inicio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="./pages/personajes.html">Personajes</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/temporadas.html">Temporadas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/curiosidades.html">Curiosidades</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/contactanos.html">Contáctanos</a></li>
-                        </ul>
+        </nav>
+    </header>
+    <main class="car">
+        <h1 class="car__title">Salvando personas, cazando cosas... El negocio familiar.</h1>
+        <section class="car__img">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./pages/imagenes/ontheroad.png" class="d-block w-100" alt="impala">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./pages/imagenes/deanandsam.jpg" class="d-block w-100" alt="hermanos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./pages/imagenes/cassamdeanjack.png" class="d-block w-100" alt="guys">
                     </div>
                 </div>
-            </nav>
-        </header>
-        <main class="car">
-            <h1 class="car__title">Salvando personas, cazando cosas... El negocio familiar.</h1>
-            <section class="car__img">
-                <img src="./pages/imagenes/ontheroad.jpg.jpg" alt="impala_67">
-            </section>
-            <section>
-                <div class="p1">
-                    <img src="./pages/imagenes/guys-actors-winchester-sam-wallpaper-preview.jpg" alt="guys_syd">
-                    <p>Supernatural (conocida también como Sobrenatural en España y México) es una serie de televisión estadounidense de la cadena The CW Network —en transmitida WB Television Network—, estrenada el 15 de septiembre de 2005. Actualmente se puede visualizar en la plataforma HBOMax sus 15 temporadas completas. En un principio, se especulaba que el programa duraría solamente cinco temporadas, pero debido a los altos ratings de audiencia logrados por la cuarta y quinta temporadas, The CW Network decidió continuar con la serie, siendo la temporada 15 la última.</p>
-                </div>
-                <div class="p2">
-                    <img src="./pages/imagenes/44464.jpg" alt="father_and_sons">
-                    <p>La serie describe las hazañas de los hermanos Sam y Dean Winchester, interpretados por los actores Jared Padalecki y Jensen Ackles respectivamente. Su padre John Winchester (Jeffrey Dean Morgan), en uno de sus peculiares cazas de espíritus desaparece; es el momento de demostrar todo lo aprendido por los chicos. Sam y Dean Winchester emprenden una búsqueda con el diario personal de su padre como única información de su posible paradero. Un diario repleto de detalles acerca de sucesos extraordinarios y criaturas sobrehumanas.
-                    </p>
-                </div>
-                <div class="p3">
-                    <img src="./pages/imagenes/ie_30366-850x560.webp" alt="sons_and_bobby">
-                    <p> Sam y Dean viajarán a diversos sitios de Estados Unidos, a bordo de un Chevrolet Impala de color negro y modelo 1967, investigando y combatiendo sucesos paranormales e inexplicables, muchos de ellos basados en leyendas urbanas de la cultura estadounidense, además de criaturas sobrenaturales clásicas, tales como vampiros, licántropos y fantasmas. Por el camino salvarán personas inocentes víctimas de los sucesos paranormales y recolectarán pistas que les acercarán cada vez más a su padre.</p>
-                </div>
-            </section>
-        </main>
-        <footer class="logos">
-            <a target="_blank" href="https://www.facebook.com/jessica.zidek.3/">
-                <img class= "img1" src="./pages/imagenes/facebook.png" alt="facebook">
-            </a>
-            <a target="_blank" href="https://www.instagram.com/j_samantha_z/?hl=es">
-                <img class= "img2" src="./pages/imagenes/logotipo-de-instagram.png" alt="instagram">
-            </a>
-            <a target="_blank" href="https://twitter.com/">
-                <img class= "img3" src="./pages/imagenes/gorjeo.png" alt="twitter">
-            </a>
-            <a target="_blank" href="https://open.spotify.com/playlist/4KClCzOMpuE0m5shalA6Rt">
-                <img class= "img4" src="./pages/imagenes/social.png" alt="spotify">
-            </a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="p1">
+                <img src="./pages/imagenes/guys-actors-winchester-sam-wallpaper-preview.jpg" alt="guys_syd">
+                <p>Supernatural (conocida también como Sobrenatural en España y México) es una serie de televisión estadounidense de la cadena The CW Network —en transmitida WB Television Network—, estrenada el 15 de septiembre de 2005. Actualmente se puede visualizar en la plataforma HBOMax sus 15 temporadas completas. En un principio, se especulaba que el programa duraría solamente cinco temporadas, pero debido a los altos ratings de audiencia logrados por la cuarta y quinta temporadas, The CW Network decidió continuar con la serie, siendo la temporada 15 la última.</p>
+            </div>
+            <div class="p2">
+                <img src="./pages/imagenes/44464.jpg" alt="father_and_sons">
+                <p>La serie describe las hazañas de los hermanos Sam y Dean Winchester, interpretados por los actores Jared Padalecki y Jensen Ackles respectivamente. Su padre John Winchester (Jeffrey Dean Morgan), en uno de sus peculiares cazas de espíritus desaparece; es el momento de demostrar todo lo aprendido por los chicos. Sam y Dean Winchester emprenden una búsqueda con el diario personal de su padre como única información de su posible paradero. Un diario repleto de detalles acerca de sucesos extraordinarios y criaturas sobrehumanas.
+                </p>
+            </div>
+            <div class="p1">
+                <img src="./pages/imagenes/ie_30366-850x560.webp" alt="sons_and_bobby">
+                <p> Sam y Dean viajarán a diversos sitios de Estados Unidos, a bordo de un Chevrolet Impala de color negro y modelo 1967, investigando y combatiendo sucesos paranormales e inexplicables, muchos de ellos basados en leyendas urbanas de la cultura estadounidense, además de criaturas sobrenaturales clásicas, tales como vampiros, licántropos y fantasmas. Por el camino salvarán personas inocentes víctimas de los sucesos paranormales y recolectarán pistas que les acercarán cada vez más a su padre.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="logos">
+            <li class="logos__li">
+                <a target="_blank" href="https://www.facebook.com/jessica.zidek.3/">
+                    <img class= "img__footer" src="./pages/imagenes/facebook.png" alt="facebook">
+                </a>
+            </li>
+            <li class="logos__li">
+                <a target="_blank" href="https://www.instagram.com/j_samantha_z/?hl=es">
+                    <img class= "img__footer" src="./pages/imagenes/logotipo-de-instagram.png" alt="instagram">
+                </a>
+            </li>
+            <li class="logos__li">
+                <a target="_blank" href="https://twitter.com/">
+                    <img class= "img__footer" src="./pages/imagenes/gorjeo.png" alt="twitter">
+                </a>
+            </li>
+            <li class="logos__li">
+                <a target="_blank" href="https://open.spotify.com/playlist/4KClCzOMpuE0m5shalA6Rt">
+                    <img class= "img__footer" src="./pages/imagenes/social.png" alt="spotify">
+                </a>
+            </li>
+        </ul>
+        <div class="footer__p">
             <p>The Winchester's Sons, Supernatural Compañía. Buenos Aires, Argentina.</p>
-        </footer>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
-    </body>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,27 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @font-face {
     font-family: "supers";
     src: url("../fuentes/Supernatural_Knight.ttf");
 }
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    }
-.background{
-    background-color:#282C30;
+.padre__index{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo"
+    "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 4fr 0.1fr ;
+    width: 100%;
+}
+.padre{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo"
+    "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 10fr 0.1fr ;
+    width: 100%;
+}
+.padre__contact{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo"
+    "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.1fr ;
+    width: 100%;
 }
 header{
-    display: flex;
+    background-color: #282C30;
+    grid-area: titulo;
 }
-.supernatural__text p{
-    font-family: "supers";
-    font-size: 10rem;
-    text-align: center;
-    text-shadow: 1rem;
-    color: #0AE0F2;
-    -webkit-text-stroke: 1px black;
+.navbar{
+    display: flex;
+    flex-direction: row;
 }
 .container-fluid{
-    background-color:#0f8893;
-    opacity: 0.8;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f8893;
+    width: 100%;
+}
+.supernatural__text{
+    font-size: 5vw;
+    text-align: center;
+    font-family: "supers";
+    color: #0AE0F2; 
+    -webkit-text-stroke: 0.1vw black;
+    grid-area: titulo;
+    padding-top: 2vw; 
+    padding-bottom: 2vw;
+}
+main{
+    background-image: linear-gradient(rgba(110,110,110,0.65), rgba(110,110,110,0.65)),
+    url(../pages/imagenes/imgazul.jpg);
+    grid-area: cuerpo;
+}
+.car{
+    display: flex;
+    flex-direction: column;
+    grid-area: cuerpo;
+}
+.car__title{
+    text-align: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    font-size: 3.5vw;
+    font-style: oblique;
+    text-shadow: 0.1vw 0.1vw 0.2vw#282C30;
+    -webkit-text-stroke: 0.1vw #0f8893;
+}
+.car__img{
+    border-style: double;
+    border-width: 1.5vw;
+    align-self: center;
+    width: 70%;
+}
+.car__pages{
+    align-self: center;
+    padding: 2vw;
+    font-size: 5vw;
+    -webkit-text-stroke: 0.1vw #0f8893;
+    text-shadow: 0.1vw 0.1vw 0.2vw#282C30;
+}
+.car__line{
+    border-top: 0.1vw solid #19C8D6;
+    height: 0.2vw;
+    max-width: 90%;
+    padding-top: 4vw;
+    margin: 0 auto 0 auto;
+}
+.p1{
+    background-color: #282c308f;
+    border-radius: 1vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.p2{
+    background-color: #282c30d1;
+    border-radius: 1vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.p1 img{
+    border-radius: 1vw;
+    width: 50%;
+}
+.p2 img{
+    border-radius: 1vw;
+    width: 50%;
+}
+.p1 p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: #aaaaaa;
+    font-family: sans-serif;
+    padding-right: 2vw;
+    align-self: center;
+}
+.p2 p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: #aaaaaa;
+    font-family: sans-serif;
+    padding-left: 2vw;
+    align-self: center;
+}
+h2{
+    text-align: center;
+    position: relative;
+    padding: 4vw;
+    font-weight: bold;
+    font-size: 5vw;
+    font-family: "supers";
+}
+.per1{
+    background-color: #282c308f;
+    border-radius: 1vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+h4{
+    font-size: 2.5vw;
+    color: #aaaaaa;
+}
+.per__imgp{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    width: 100%;
+}
+.per__imgp img{
+    border-radius: 1vw;
+}
+.per__imgp p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: #aaaaaa;
+    font-family: sans-serif;
+    padding-right: 2vw;
+    align-self: center;
+}
+.p__tempo{
+    background-color: #282c308f;
+    border-radius: 1vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    grid-area: cuerpo;
+}
+.p__tempo p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: #aaaaaa;
+    font-family: sans-serif;
+    padding: 1vw;
+}
+.img__tempo{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 15%;
+}
+.img__tempo img{
+    border-radius: 1vw;
+    box-shadow: 0 0vw 2vw 1vw rgba(44, 207, 222, 0.474);
+
+}
+.img__tempo:hover{
+    width: 50%;
+    transition: 1s;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #282c308f;
+    border-radius: 1vw;
+    width: 80vw;
+    color: #aaaaaa;
+    grid-area: cuerpo;
+    margin: 3vw;
+}
+.contact legend{
+    padding-top: 2vw;
+    padding-left: 2vw;
+    font-size: 3.5vw;
+    text-align: center;
+}
+.btn {
+    background-color: #19C8D6;
+    margin: 3vw;
+    font-weight: bold;
+    box-shadow: 0 0vw 2vw 1vw rgba(44, 207, 222, 0.204);
+}
+.mb-3{
+    padding: 2vw;
+}
+.mb-3 textarea{
+    height: 20vw;
+}
+.thanks{
+    text-align: right;
+    font-size: 4vw;
+    font-family: "supers";
+    -webkit-text-stroke: 0.01vw #282C30;
+    text-shadow: 0.1vw 0.1vw 0.2vw#0f8893aa;
+    font-style: oblique;
+    padding: 4vw;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #0f8893;
+    border-style: solid;
+    border-color: #19C8D6;
+    justify-content: space-between;
+    grid-area: pie;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.logos__li{
+    padding: 1vw;
+}
+.footer__p{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: center;
+    font-size: 1vw;
+    padding: 1vw;
+}
+.img__footer{
+    width: 2.5vw;
+}
+
+
+@media screen and (max-width: 540px){
+
+    .supernatural__text{
+        font-size: 10vw;
+    }
+    .car__title{
+        font-size: 7vw;
+    }
+    .car__img{
+        width: 80%;
+    }
+    .p1{
+        flex-direction: column;
+    }
+    .p2{
+        flex-direction: column;
+    }
+    .p1 img{
+        align-self: center;
+        width: 70%;
+    }
+    .p2 img{
+        align-self: center;
+        width: 70%;
+    }
+    .p1 p{
+        font-size: 3vw;
+    }
+    .p2 p{
+        font-size: 3vw;
+    }
+
+
+
+
+
+    .footer__p{
+        font-size: 2vw;
+    }
+    .img__footer{
+        margin-right: 2vw;
+        margin-top: 2vw;
+        width: 5vw;
+    }
 }

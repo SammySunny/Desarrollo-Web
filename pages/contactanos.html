@@ -5,22 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Winchester's Sons</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
-    <body class="background">
+    <body class="padre__contact">
         <header>
             <div class="supernatural__text">
                 <p>Supernatural</p>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./personajes.html">Personajes</a></li>
-                    <li><a href="./temporadas.html">Temporadas</a></li>
-                    <li><a href="./curiosidades.html">Curiosidades</a></li>
-                    <li><a href="#">Contáctanos</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="./personajes.html">Personajes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./temporadas.html">Temporadas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./curiosidades.html">Curiosidades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+                        </ul>
+                    </div>
             </nav>
         </header>
         <main class="car">
@@ -32,44 +38,51 @@
                 <form>
                     <fieldset>
                         <legend>Envíanos tus consultas</legend>
-                        <div>
-                            <br>
-                            <label for="">Nombre:</label>
-                            <input class= "name" type="text" name="nombre" id="">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
                         </div>
-                        <div>
-                            <br>
-                            <label for="">E-mail:</label>
-                            <input class="email" type="email" name="email" id="">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
                         </div>
-                        <div>
-                            <br>
-                            <label for="">Coméntanos:</label>
-                            <br>
-                            <textarea name="Comentanos" placeholder="Dejanos tu comentario" id="" cols="100" rows="20"></textarea>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Comentanos:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <br>
-                        <input type="submit" value="Enviar">
+                        <input class="btn btn-primary" type="submit" value="Enviar">
                     </fieldset>
                 </form>
             </section>
                 <p class="thanks">Gracias por tu visita</p>
         </main>
-        <footer class="logos">
-            <a target="_blank" href="https://www.facebook.com/jessica.zidek.3/">
-                <img class= "img1" src="../pages/imagenes/facebook.png" alt="facebook">
-            </a>
-            <a target="_blank" href="https://www.instagram.com/j_samantha_z/?hl=es">
-                <img class= "img2" src="../pages/imagenes/logotipo-de-instagram.png" alt="instagram">
-            </a>
-            <a target="_blank" href="https://twitter.com/">
-                <img class= "img3" src="../pages/imagenes/gorjeo.png" alt="twitter">
-            </a>
-            <a target="_blank" href="https://open.spotify.com/playlist/4KClCzOMpuE0m5shalA6Rt">
-                <img class= "img4" src="../pages/imagenes/social.png" alt="spotify">
-            </a>
-            <p>The Winchester's Sons, Supernatural Compañía. Buenos Aires, Argentina.</p>
+        <footer>
+            <ul class="logos">
+                <li class="logos__li">
+                    <a target="_blank" href="https://www.facebook.com/jessica.zidek.3/">
+                        <img class= "img__footer" src="../pages/imagenes/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li class="logos__li">
+                    <a target="_blank" href="https://www.instagram.com/j_samantha_z/?hl=es">
+                        <img class= "img__footer" src="../pages/imagenes/logotipo-de-instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li class="logos__li">
+                    <a target="_blank" href="https://twitter.com/">
+                        <img class= "img__footer" src="../pages/imagenes/gorjeo.png" alt="twitter">
+                    </a>
+                </li>
+                <li class="logos__li">
+                    <a target="_blank" href="https://open.spotify.com/playlist/4KClCzOMpuE0m5shalA6Rt">
+                        <img class= "img__footer" src="../pages/imagenes/social.png" alt="spotify">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__p">
+                <p>The Winchester's Sons, Supernatural Compañía. Buenos Aires, Argentina.</p>
+            </div>
         </footer>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html>
