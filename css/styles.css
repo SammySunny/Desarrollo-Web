@@ -335,7 +335,7 @@ footer{
 }
 
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 576px){
 
     .padre__curo{
         grid-template-rows: 0.2fr 5fr 0.1fr ;
