@@ -57,18 +57,21 @@
     grid-template-rows: 0.2fr 4fr 0.1fr ;
     width: 100%;
 }
+.navbar-brand img{
+    width: 3vw;
+}
 header{
     background-color: #282C30;
     grid-area: titulo;
-}
-.navbar{
-    display: flex;
-    flex-direction: row;
 }
 .container-fluid{
     display: flex;
     background-color: #0f8893;
     width: 100%;
+}
+.ms-5{
+    padding-left: 10vw;
+    margin-right: 5vw;
 }
 .supernatural__text{
     font-size: 5vw;
@@ -337,7 +340,9 @@ footer{
     .padre__curo{
         grid-template-rows: 0.2fr 5fr 0.1fr ;
     }
-
+    .navbar-brand img{
+        width: 6vw;
+    }
     .supernatural__text{
         font-size: 10vw;
     }
@@ -370,7 +375,6 @@ footer{
         font-size: 3vw;
     }
 
-    
     .car__pages{
         padding: 3vw;
         font-size: 6vw;
@@ -391,6 +395,7 @@ footer{
         width: 40%;
         padding: 3vw;
         margin: 0 auto;
+        border-radius: 5vw;
     }
     .per__imgp p{
         font-size: 3vw;
@@ -406,7 +411,6 @@ footer{
     .img__tempo img{
         width: 40%;
     }
-
 
     .p__curo p{
         font-size: 3vw;
