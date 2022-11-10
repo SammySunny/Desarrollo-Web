@@ -410,6 +410,10 @@ main {
   .supernatural__text {
     font-size: 10vw;
   }
+  /* Imagen de fondo del body */
+  main {
+    background-size: 76%;
+  }
   /* h1 de index.html */
   .car__title {
     font-size: 7vw;
