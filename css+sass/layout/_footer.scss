@@ -1,0 +1,31 @@
+.foot{
+    display: flex;
+    flex-direction: row;
+    background-color: $celesob;
+    border-style: solid;
+    border-color: $celescl;
+    justify-content: space-between;
+    grid-area: pie;
+
+    &__p{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: center;
+        font-size: 1.2vw;
+        padding: 1vw;
+        }
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    &__li{
+        padding: 1vw;
+    }
+    &__img{
+        width: 2.5vw;
+    }
+}
+

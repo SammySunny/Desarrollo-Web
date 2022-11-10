@@ -1,0 +1,498 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "supers";
+  src: url("../fuentes/Supernatural_Knight.ttf");
+}
+/* Este map get está aplicado a las imágenes del carrusel de bootstrap del index.html, está en _images.scss */
+.padre__index {
+  display: grid;
+  grid-template-areas: "titulo" "cuerpo" "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 4fr 0.1fr;
+  width: 100%;
+}
+
+/* padre personajes.html */
+.padre__perso {
+  display: grid;
+  grid-template-areas: "titulo" "cuerpo" "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 4fr 0.1fr;
+  width: 100%;
+}
+
+/* padre temporadas.html */
+.padre__tempo {
+  display: grid;
+  grid-template-areas: "titulo" "cuerpo" "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 12fr 0.1fr;
+  width: 100%;
+}
+
+/* padre curiosidades.html */
+.padre__curo {
+  display: grid;
+  grid-template-areas: "titulo" "cuerpo" "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 4fr 0.1fr;
+  width: 100%;
+}
+
+/* padre contactanos.html */
+.padre__contact {
+  display: grid;
+  grid-template-areas: "titulo" "cuerpo" "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2fr 0.1fr;
+  width: 100%;
+}
+
+/* clase del main en todos los html */
+.car {
+  display: flex;
+  flex-direction: column;
+  grid-area: cuerpo;
+}
+
+/* ubicado en index.html */
+.p1 {
+  background-color: rgba(40, 44, 48, 0.8196078431);
+  border-radius: 1vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.p2 {
+  background-color: rgba(40, 44, 48, 0.8196078431);
+  border-radius: 1vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+/* ubicado en personajes.html */
+.per1 {
+  background-color: rgba(40, 44, 48, 0.8196078431);
+  border-radius: 1vw;
+  padding: 2vw;
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.per__imgp {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ubicado en termporadas.html */
+.p__tempo {
+  background-color: rgba(40, 44, 48, 0.8196078431);
+  border-radius: 1vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  grid-area: cuerpo;
+}
+
+.img__tempo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+/* ubicado en curiosidades.html */
+.p__curo {
+  background-color: rgba(40, 44, 48, 0.8196078431);
+  border-radius: 1vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  grid-area: cuerpo;
+}
+
+/* ubicado en contactanos.html */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: rgba(40, 44, 48, 0.8196078431);
+  border-radius: 1vw;
+  width: 80vw;
+  color: #aaaaaa;
+  grid-area: cuerpo;
+  margin: 3vw;
+}
+
+header {
+  background-color: #282C30;
+  grid-area: titulo;
+}
+
+/* Corresponde al título del Header */
+.supernatural__text {
+  font-size: 6vw;
+  text-align: center;
+  font-family: "supers";
+  color: black;
+  -webkit-text-stroke: 0.1vw #0f8893;
+  text-shadow: 0vw 2vw 1vw rgba(44, 207, 222, 0.474);
+  grid-area: titulo;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+.supernatural__text a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  -webkit-text-stroke: inherit;
+}
+
+.container-fluid {
+  display: flex;
+  background-color: #0f8893;
+  width: 100%;
+}
+
+.ms-5 {
+  padding-left: 10vw;
+  margin-right: 5vw;
+}
+
+.navbar-brand img {
+  width: 3vw;
+}
+
+/* h1 en index.html */
+.car__title {
+  text-align: center;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  font-size: 3.5vw;
+  font-style: oblique;
+  text-shadow: 0.1vw 0.1vw 0.2vw #282C30;
+  -webkit-text-stroke: 0.1vw #0f8893;
+}
+
+/* textos presentes en "cards" de index.html */
+.p1 p {
+  font-size: 1.3vw;
+  text-align: start;
+  font-weight: bolder;
+  color: #aaaaaa;
+  font-family: sans-serif;
+  padding-right: 2vw;
+  align-self: center;
+}
+
+.p2 p {
+  font-size: 1.3vw;
+  text-align: start;
+  font-weight: bolder;
+  color: #aaaaaa;
+  font-family: sans-serif;
+  padding-left: 2vw;
+  align-self: center;
+}
+
+/* ubicado en personajes.html */
+h2 {
+  text-align: center;
+  position: relative;
+  padding: 4vw;
+  font-weight: bold;
+  font-size: 5vw;
+  font-family: "supers";
+}
+
+/* título de todos los html excepto del index */
+.car__pages {
+  align-self: center;
+  padding: 2vw;
+  font-size: 5vw;
+  -webkit-text-stroke: 0.1vw #0f8893;
+  text-shadow: 0.1vw 0.1vw 0.2vw #282C30;
+}
+
+/* subtítulos aplicados en personajes/temporadas/curiosidades.html */
+h4 {
+  font-size: 2.5vw;
+  color: #aaaaaa;
+}
+
+/* texto de las "cards" en personajes.html */
+.per__imgp p {
+  font-size: 1.3vw;
+  text-align: start;
+  font-weight: bolder;
+  color: #aaaaaa;
+  font-family: sans-serif;
+  padding-right: 2vw;
+  align-self: center;
+}
+
+/* texto de las "cards" en temporadas.html */
+.p__tempo p {
+  font-size: 1.3vw;
+  text-align: start;
+  font-weight: bolder;
+  color: #aaaaaa;
+  font-family: sans-serif;
+  padding: 1vw;
+}
+
+/* texto de las "cards" en curiosidades.html */
+.p__curo p {
+  font-size: 1.3vw;
+  text-align: start;
+  font-weight: bolder;
+  color: #aaaaaa;
+  font-family: sans-serif;
+  padding: 1vw;
+}
+
+/* subtítulo del "fieldset" en contactanos.html*/
+.contact legend {
+  padding-top: 2vw;
+  padding-left: 2vw;
+  font-size: 3.5vw;
+  text-align: center;
+}
+
+/* agradecimientos en contactanos.html */
+.thanks {
+  text-align: right;
+  font-size: 4vw;
+  font-family: "supers";
+  -webkit-text-stroke: 0.01vw #282C30;
+  text-shadow: 0.1vw 0.1vw 0.2vw rgba(15, 136, 147, 0.6666666667);
+  font-style: oblique;
+  padding: 4vw;
+  font-weight: bold;
+}
+
+/* Imagen de fondo del body */
+main {
+  background-image: linear-gradient(rgba(110, 110, 110, 0.65), rgba(110, 110, 110, 0.65)), url(../pages/imagenes/imgazul.jpg);
+  background-size: 50%;
+  grid-area: cuerpo;
+}
+
+/* Esta img corresponde al carrusel en index.html */
+.car__img {
+  border-style: double;
+  border-width: 1.5vw;
+  align-self: center;
+  width: 50vw;
+}
+
+/* p1 img y p2 img corresponde a las imágenes "cards" de index.html */
+.p1 img {
+  border-radius: 1vw;
+  width: 300%;
+}
+
+.p2 img {
+  border-radius: 1vw;
+  width: 300%;
+}
+
+/* per_imgp img imagenes de "cards" en personajes.html */
+.per__imgp img {
+  border-radius: 1vw;
+}
+
+/* Imágenes en temporadas.html */
+.img__tempo img {
+  border-radius: 1vw;
+  box-shadow: 0 0vw 2vw 1vw rgba(44, 207, 222, 0.474);
+  width: 50%;
+  margin: 0 auto;
+}
+.img__tempo img:hover {
+  width: 100%;
+  transition: 1s;
+}
+
+/* línea presente en todos los html excepto el index */
+.car__line {
+  border-top: 0.1vw solid #19C8D6;
+  height: 0.2vw;
+  max-width: 90%;
+  padding-top: 4vw;
+  margin: 0 auto 0 auto;
+}
+
+/* componentes del "fieldset" de bootstrap en contactanos.hmtl */
+.mb-3 {
+  padding: 2vw;
+}
+
+.mb-3 textarea {
+  height: 20vw;
+}
+
+.btn {
+  background-color: #19C8D6;
+  margin: 3vw;
+  font-weight: bold;
+  box-shadow: 0 0vw 2vw 1vw rgba(44, 207, 222, 0.204);
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  background-color: #0f8893;
+  border-style: solid;
+  border-color: #0AE0F2;
+  justify-content: space-between;
+  grid-area: pie;
+}
+.foot__p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  font-size: 1.2vw;
+  padding: 1vw;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.logos__li {
+  padding: 1vw;
+}
+.logos__img {
+  width: 2.5vw;
+}
+
+@media screen and (max-width: 576px) {
+  /* body de curiosidades.html */
+  .padre__curo {
+    grid-template-rows: 0.2fr 5fr 0.1fr;
+  }
+  /* navbar */
+  .navbar-brand img {
+    width: 6vw;
+  }
+  /* título del header */
+  .supernatural__text {
+    font-size: 10vw;
+  }
+  /* h1 de index.html */
+  .car__title {
+    font-size: 7vw;
+  }
+  /* imágenes del carrusel index.html*/
+  .car__img {
+    width: 80%;
+  }
+  /* "cards" de index.html */
+  .p1 {
+    flex-direction: column;
+  }
+  .p1 img {
+    align-self: center;
+    width: 70%;
+  }
+  .p1 p {
+    padding: 3vw;
+    font-size: 3vw;
+  }
+  .p2 {
+    flex-direction: column;
+  }
+  .p2 img {
+    align-self: center;
+    width: 70%;
+  }
+  .p2 p {
+    padding: 3vw;
+    font-size: 3vw;
+  }
+  /* h1 de personajes/temporadas/curiosidades/contactanos.html */
+  .car__pages {
+    padding: 3vw;
+    font-size: 6vw;
+  }
+  /* h2 de personajes.html */
+  h2 {
+    font-size: 7vw;
+  }
+  /* "cards" de personajes.html */
+  .per1 {
+    flex-direction: column;
+  }
+  /* h4 de temporadas y curiosidades.html */
+  h4 {
+    font-size: 4vw;
+  }
+  /* "cards" de personajes.html */
+  .per__imgp {
+    flex-direction: column-reverse;
+  }
+  .per__imgp img {
+    width: 40%;
+    padding: 3vw;
+    margin: 0 auto;
+    border-radius: 5vw;
+  }
+  .per__imgp p {
+    font-size: 3vw;
+    text-align: start;
+  }
+  .p__tempo {
+    width: 90%;
+  }
+  .p__tempo p {
+    font-size: 3vw;
+  }
+  /* img de temporadas.html */
+  .img__tempo img {
+    width: 40%;
+  }
+  /* texto de curiosidades.html */
+  .p__curo p {
+    font-size: 3vw;
+  }
+  /* sección del footer: texto es foot__p p y .logos__img las imágenes de todos los html */
+  .foot__p p {
+    font-size: 1.5vw;
+  }
+  .logos__img {
+    margin-right: 2vw;
+    margin-top: 2vw;
+    width: 5vw;
+  }
+}/*# sourceMappingURL=styles.css.map */

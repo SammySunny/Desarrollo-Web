@@ -1,0 +1,107 @@
+@media screen and (max-width: 576px){
+/* body de curiosidades.html */
+    .padre__curo{
+        grid-template-rows: 0.2fr 5fr 0.1fr ;
+    }
+    /* navbar */
+    .navbar-brand img{
+        width: 6vw;
+    }
+    /* título del header */
+    .supernatural__text{
+        font-size: 10vw;
+    }
+    /* h1 de index.html */
+    .car__title{
+        font-size: 7vw;
+    }
+/* imágenes del carrusel index.html*/
+    .car__img{
+            width: 80%;
+        }    
+/* "cards" de index.html */
+    .p1{
+        flex-direction: column;
+
+        img{
+        align-self: center;
+        width: 70%;    
+        }
+
+        p{
+        padding: 3vw;
+        font-size: 3vw;            
+        }
+    }
+    .p2{
+        flex-direction: column;
+
+        img{
+        align-self: center;
+        width: 70%;            
+        }
+
+        p{
+        padding: 3vw;
+        font-size: 3vw;            
+        }
+    }
+/* h1 de personajes/temporadas/curiosidades/contactanos.html */
+    .car__pages{
+        padding: 3vw;
+        font-size: 6vw;
+    }
+    /* h2 de personajes.html */
+    h2{
+        font-size: 7vw;
+    }
+    /* "cards" de personajes.html */
+    .per1{
+        flex-direction: column;
+    }
+    /* h4 de temporadas y curiosidades.html */
+    h4{
+        font-size: 4vw;
+    }
+    /* "cards" de personajes.html */
+    .per__imgp{
+        flex-direction: column-reverse;
+
+        img{
+        width: 40%;
+        padding: 3vw;
+        margin: 0 auto;
+        border-radius: 5vw;            
+        }
+
+        p{
+        font-size: 3vw;
+        text-align: start;            
+        }
+    }
+
+    .p__tempo{
+        width: 90%;
+
+        p{
+        font-size: 3vw;            
+        }
+    }
+/* img de temporadas.html */
+    .img__tempo img{
+        width: 40%;
+    }
+/* texto de curiosidades.html */
+    .p__curo p{
+        font-size: 3vw;
+    }
+/* sección del footer: texto es foot__p p y .logos__img las imágenes de todos los html */
+    .foot__p p{
+        font-size: 1.5vw;
+    }
+    .logos__img{
+        margin-right: 2vw;
+        margin-top: 2vw;
+        width: 5vw;
+    }
+}

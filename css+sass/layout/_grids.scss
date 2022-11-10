@@ -1,0 +1,54 @@
+.padre__index{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo"
+    "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 4fr 0.1fr ;
+    width: 100%;
+}
+/* padre personajes.html */
+.padre__perso{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo"
+    "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 4fr 0.1fr ;
+    width: 100%;
+}
+/* padre temporadas.html */
+.padre__tempo{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo"
+    "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 12fr 0.1fr ;
+    width: 100%;
+}
+/* padre curiosidades.html */
+.padre__curo{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo"
+    "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 4fr 0.1fr ;
+    width: 100%;
+}
+/* padre contactanos.html */
+.padre__contact{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "cuerpo"
+    "pie";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.1fr ;
+    width: 100%;
+}

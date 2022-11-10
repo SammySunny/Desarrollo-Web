@@ -1,0 +1,39 @@
+/* Imagen de fondo del body */
+main{
+    background-image: linear-gradient(rgba(110,110,110,0.65), rgba(110,110,110,0.65)),
+    url(../pages/imagenes/imgazul.jpg);
+    background-size: 50%;
+    grid-area: cuerpo;
+}
+/* Esta img corresponde al carrusel en index.html */
+.car__img{
+    border-style: map-get($map: $car_img_styles, $key: borde);
+    border-width: map-get($map: $car_img_styles, $key: tborde);
+    align-self: map-get($map: $car_img_styles, $key: lugar);
+    width: map-get($map: $car_img_styles, $key: tamaño);
+}
+/* p1 img y p2 img corresponde a las imágenes "cards" de index.html */
+.p1 img{
+    border-radius: 1vw;
+    width: 300%;
+}
+.p2 img{
+    border-radius: 1vw;
+    width: 300%;
+}
+/* per_imgp img imagenes de "cards" en personajes.html */
+.per__imgp img{
+    border-radius: 1vw;
+}
+/* Imágenes en temporadas.html */
+.img__tempo img{
+    border-radius: 1vw;
+    box-shadow: 0 0vw 2vw 1vw $shadowtittleimg;
+    width: 50%;
+    margin: 0 auto;
+
+    &:hover{
+    width: 100%;
+    transition: 1s;
+    }
+}

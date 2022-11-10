@@ -1,0 +1,23 @@
+header{
+    background-color: $grisob;
+    grid-area: titulo;
+}
+/* Corresponde al título del Header */
+.supernatural__text{
+    font-size: 6vw;
+    text-align: center;
+    font-family: "supers";
+    color: $black; 
+    -webkit-text-stroke: 0.1vw $celesob;
+    text-shadow:0vw 2vw 1vw $shadowtittleimg;
+    grid-area: titulo;
+    padding-top: 2vw; 
+    padding-bottom: 2vw;
+
+    a{
+        color:inherit;
+        text-decoration: inherit;
+        font-weight: inherit;
+        -webkit-text-stroke: inherit;
+    }
+}

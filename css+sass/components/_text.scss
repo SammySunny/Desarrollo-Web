@@ -1,0 +1,97 @@
+/* h1 en index.html */
+.car__title{
+    text-align: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    font-size: 3.5vw;
+    font-style: oblique;
+    text-shadow: 0.1vw 0.1vw 0.2vw$grisob;
+    -webkit-text-stroke: 0.1vw $celesob;
+}
+/* textos presentes en "cards" de index.html */
+.p1 p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: $griscla;
+    font-family: sans-serif;
+    padding-right: 2vw;
+    align-self: center;
+}
+.p2 p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: $griscla;
+    font-family: sans-serif;
+    padding-left: 2vw;
+    align-self: center;
+}
+/* ubicado en personajes.html */
+h2{
+    text-align: center;
+    position: relative;
+    padding: 4vw;
+    font-weight: bold;
+    font-size: 5vw;
+    font-family: "supers";
+}
+/* título de todos los html excepto del index */
+.car__pages{
+    align-self: center;
+    padding: 2vw;
+    font-size: 5vw;
+    -webkit-text-stroke: 0.1vw #0f8893;
+    text-shadow: 0.1vw 0.1vw 0.2vw#282C30;
+}
+/* subtítulos aplicados en personajes/temporadas/curiosidades.html */
+h4{
+    font-size: 2.5vw;
+    color: $griscla;
+}
+/* texto de las "cards" en personajes.html */
+.per__imgp p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: $griscla;
+    font-family: sans-serif;
+    padding-right: 2vw;
+    align-self: center;
+}
+/* texto de las "cards" en temporadas.html */
+.p__tempo p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: $griscla;
+    font-family: sans-serif;
+    padding: 1vw;
+}
+/* texto de las "cards" en curiosidades.html */
+.p__curo p{
+    font-size: 1.3vw;
+    text-align: start;
+    font-weight: bolder;
+    color: $griscla;
+    font-family: sans-serif;
+    padding: 1vw;
+}
+/* subtítulo del "fieldset" en contactanos.html*/
+.contact legend{
+    padding-top: 2vw;
+    padding-left: 2vw;
+    font-size: 3.5vw;
+    text-align: center;
+}
+/* agradecimientos en contactanos.html */
+.thanks{
+    text-align: right;
+    font-size: 4vw;
+    font-family: "supers";
+    -webkit-text-stroke: 0.01vw $grisob;
+    text-shadow: 0.1vw 0.1vw 0.2vw $celesshadow;
+    font-style: oblique;
+    padding: 4vw;
+    font-weight: bold;
+}

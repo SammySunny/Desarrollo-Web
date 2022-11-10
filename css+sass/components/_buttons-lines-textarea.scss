@@ -1,0 +1,21 @@
+/* línea presente en todos los html excepto el index */
+.car__line{
+    border-top: 0.1vw solid $celeslinea;
+    height: 0.2vw;
+    max-width: 90%;
+    padding-top: 4vw;
+    margin: 0 auto 0 auto;
+}
+/* componentes del "fieldset" de bootstrap en contactanos.hmtl */
+.mb-3{
+    padding: 2vw;
+}
+.mb-3 textarea{
+    height: 20vw;
+}
+.btn {
+    background-color: $celeslinea;
+    margin: 3vw;
+    font-weight: bold;
+    box-shadow: 0 0vw 2vw 1vw rgba(44, 207, 222, 0.204);
+}
