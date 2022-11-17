@@ -10,7 +10,7 @@ main{
     border-style: map-get($map: $car_img_styles, $key: borde);
     border-width: map-get($map: $car_img_styles, $key: tborde);
     align-self: map-get($map: $car_img_styles, $key: lugar);
-    width: map-get($map: $car_img_styles, $key: tamaño);
+    width: map-get($map: $car_img_styles, $key: ancho);
 }
 /* p1 img y p2 img corresponde a las imágenes "cards" de index.html */
 .p1 img{
@@ -31,9 +31,11 @@ main{
     box-shadow: 0 0vw 2vw 1vw $shadowtittleimg;
     width: 50%;
     margin: 0 auto;
+    transition: 1s;
 
     &:hover{
     width: 100%;
-    transition: 1s;
+    transform: scale(1);
+    z-index: 2;
     }
 }

@@ -2,7 +2,7 @@ header{
     background-color: $grisob;
     grid-area: titulo;
 }
-/* Corresponde al título del Header */
+/* Corresponde al título del Header de todos los html, excepto index.html */
 .supernatural__text{
     font-size: 6vw;
     text-align: center;
@@ -20,4 +20,49 @@ header{
         font-weight: inherit;
         -webkit-text-stroke: inherit;
     }
+}
+/* Corresponde al título del Header de index.html */
+.supernatural__text__animacion{
+    font-size: 6vw;
+    text-align: center;
+    font-family: "supers";
+    color: $black; 
+    -webkit-text-stroke: 0.1vw $celesob;
+    text-shadow:0vw 2vw 1vw $shadowtittleimg;
+    grid-area: titulo;
+    padding-top: 2vw; 
+    padding-bottom: 2vw;
+    animation: supernatural 2.5s;
+    transition-property: transform;
+
+    a{
+        color:inherit;
+        text-decoration: inherit;
+        font-weight: inherit;
+        -webkit-text-stroke: inherit;
+    }
+
+    @keyframes supernatural {
+        /* traslate (eje x, eje y) */
+        0%{
+            transform: translate(-20vw,-8vw);
+            text-shadow:4vw 3vw $shadowtittleimg;
+        }
+        25%{
+            transform: translate(15vw,6vw);
+            font-size: 8rem;
+        }
+        50%{
+            transform: translate(-30vw,3vw);
+        }
+        75%{
+            transform: translate(25vw,-9vw);
+            text-shadow: 1vw 1vw 2vw rgb(241, 242, 245), 0 0 1em rgb(0, 255, 217), 0 0 0.2em rgb(0, 153, 255);
+            
+        }
+        100%{
+            transform: translate(0, 0);
+        }
+    }
+
 }
