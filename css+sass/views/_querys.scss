@@ -7,11 +7,15 @@
     .navbar-brand img{
         width: 6vw;
     }
-    /* título del header */
-    .supernatural__text{
+    /* título del header en index.html*/
+    .supernatural__text__animacion{
         font-size: 10vw;
         animation: none;
     }
+        /* título del header en todos los html excepto index.html*/
+        .supernatural__text{
+            font-size: 10vw;
+        }
     /* Imagen de fondo del body */
 main{
     background-size: 76%;
