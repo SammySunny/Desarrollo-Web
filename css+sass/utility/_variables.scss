@@ -4,4 +4,20 @@ $car_img_styles: (
     tborde: 1.5vw,
     lugar: center,
     ancho: 50vw,
-)
+);
+
+/* Mixins aplicados en _flex.scss */
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-rowreverse{
+    display: flex;
+    flex-direction: row-reverse;
+}

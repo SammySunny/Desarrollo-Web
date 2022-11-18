@@ -1,27 +1,24 @@
 /* clase del main en todos los html */
 .car{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     grid-area: cuerpo;
 }
 /* ubicado en index.html */
 .p1{
+    @include flex-rowreverse;
     background-color: $grisdegra;
     border-radius: 1vw;
     padding: 2vw;
-    display: flex;
-    flex-direction: row-reverse;
     margin: 0 auto;
     width: 90%;
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
 .p2{
+    @include flex-row;
     background-color: $grisdegra;
     border-radius: 1vw;
     padding: 2vw;
-    display: flex;
-    flex-direction: row;
     margin: 0 auto;
     width: 90%;
     margin-top: 5vw;
@@ -39,18 +36,16 @@
     margin-bottom: 5vw;
 }
 .per__imgp{
-    display: flex;
-    flex-direction: row-reverse;
+    @include flex-rowreverse;
     margin: 0 auto;
     width: 100%;
 }
 /* ubicado en termporadas.html */
 .p__tempo{
+    @include flex-column;
     background-color: $grisdegra;
     border-radius: 1vw;
     padding: 2vw;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     width: 90%;
     margin-top: 5vw;
@@ -58,17 +53,15 @@
     grid-area: cuerpo;
 }
 .img__tempo{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-self: center;
 }
 /* ubicado en curiosidades.html */
 .p__curo{
+    @include flex-column;
     background-color: $grisdegra;
     border-radius: 1vw;
     padding: 2vw;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     width: 90%;
     margin-top: 5vw;
@@ -77,12 +70,11 @@
 }
 /* ubicado en contactanos.html */
 .contact{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-self: center;
     background-color: $grisdegra;
     border-radius: 1vw;
-    width: 80vw;
+    width: 50vw;
     color: $griscla;
     grid-area: cuerpo;
     margin: 3vw;

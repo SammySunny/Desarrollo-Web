@@ -10,6 +10,7 @@
   src: url("../fuentes/Supernatural_Knight.ttf");
 }
 /* Este map get está aplicado a las imágenes del carrusel de bootstrap del index.html, está en _images.scss */
+/* Mixins aplicados en _flex.scss */
 .padre__index {
   display: grid;
   grid-template-areas: "titulo" "cuerpo" "pie";
@@ -63,11 +64,11 @@
 
 /* ubicado en index.html */
 .p1 {
+  display: flex;
+  flex-direction: row-reverse;
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
   padding: 2vw;
-  display: flex;
-  flex-direction: row-reverse;
   margin: 0 auto;
   width: 90%;
   margin-top: 5vw;
@@ -75,11 +76,11 @@
 }
 
 .p2 {
+  display: flex;
+  flex-direction: row;
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
   padding: 2vw;
-  display: flex;
-  flex-direction: row;
   margin: 0 auto;
   width: 90%;
   margin-top: 5vw;
@@ -107,11 +108,11 @@
 
 /* ubicado en termporadas.html */
 .p__tempo {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
   padding: 2vw;
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   width: 90%;
   margin-top: 5vw;
@@ -127,11 +128,11 @@
 
 /* ubicado en curiosidades.html */
 .p__curo {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
   padding: 2vw;
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   width: 90%;
   margin-top: 5vw;
@@ -146,7 +147,7 @@
   align-self: center;
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
-  width: 80vw;
+  width: 50vw;
   color: #aaaaaa;
   grid-area: cuerpo;
   margin: 3vw;
@@ -447,7 +448,7 @@ main {
   flex-direction: row;
   justify-content: flex-end;
   align-self: center;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   padding: 1vw;
 }
 
@@ -564,7 +565,7 @@ main {
   }
   /* sección del footer: texto es foot__p p y .logos__img las imágenes de todos los html */
   .foot__p p {
-    font-size: 1.5vw;
+    font-size: 0.9rem;
   }
   .logos__img {
     margin-right: 2vw;
