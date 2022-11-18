@@ -71,11 +71,14 @@
 /* ubicado en contactanos.html */
 .contact{
     @include flex-column;
+        align-self: center;
+        grid-area: cuerpo;
+
+    fieldset{
         background-color: $grisdegra;
         border-radius: 1vw;
         width: 55vw;
         color: $griscla;
         margin: 3vw;
-        align-self: center;
-        grid-area: cuerpo;
+    }
 }
