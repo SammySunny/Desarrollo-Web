@@ -74,7 +74,7 @@
         align-self: center;
         grid-area: cuerpo;
 
-    fieldset{
+    &__field{
         background-color: $grisdegra;
         border-radius: 1vw;
         width: 55vw;

@@ -32,7 +32,7 @@ header{
     grid-area: titulo;
     padding-top: 2vw; 
     padding-bottom: 2vw;
-    animation: supernatural 2.5s;
+    animation: supernatural 5s;
     transition-property: transform;
 
     a{
@@ -43,26 +43,38 @@ header{
     }
 
     @keyframes supernatural {
-        /* traslate (eje x, eje y) */
         0%{
-            transform: translate(-20vw,-8vw);
             text-shadow:4vw 3vw $shadowtittleimg;
+            color: rgb(255, 111, 0); 
+            -webkit-text-stroke: 0.1vw rgb(243, 148, 6);
+            text-shadow: 1vw 1vw 8vw rgb(209, 148, 6), 0 0 1em rgb(221, 65, 22), 0 0 0.2em rgb(232, 103, 23);
         }
-        25%{
-            transform: translate(15vw,6vw);
-            font-size: 8rem;
+        20%{
+            font-size: 6rem;
+            color: rgb(127, 93, 163); 
+            -webkit-text-stroke: 0.1vw rgb(179, 156, 200);
+            text-shadow: 8vw 8vw 8vw rgb(136, 85, 199), 0 0 1em rgb(145, 68, 190), 0 0 0.2em rgb(19, 149, 236);
         }
-        50%{
-            transform: translate(-30vw,3vw);
+        40%{
+            font-size: 6rem;
+            color: rgb(132, 11, 11); 
+            -webkit-text-stroke: 0.1vw rgb(92, 5, 5);
+            text-shadow: 8vw 8vw 8vw rgb(105, 25, 25), 0 0 1em rgb(10, 2, 14), 0 0 0.2em rgb(140, 16, 16);
         }
-        75%{
-            transform: translate(25vw,-9vw);
-            text-shadow: 1vw 1vw 2vw rgb(241, 242, 245), 0 0 1em rgb(0, 255, 217), 0 0 0.2em rgb(0, 153, 255);
+        60%{
+            color: rgb(32, 38, 44); 
+            -webkit-text-stroke: 0.1vw rgb(199, 202, 234);
+            text-shadow: 8vw 8vw 8vw rgb(25, 64, 105), 0 0 1em rgb(246, 249, 251), 0 0 0.2em rgb(251, 251, 251);
             
         }
+        80%{
+            color: rgb(20, 69, 84);
+            -webkit-text-stroke: 0.1vw $celescl;
+            text-shadow: 8vw 8vw 8vw rgb(0, 150, 244), 0 0 1em rgb(0, 255, 247), 0 0 0.2em rgb(4, 242, 255);
+        }
         100%{
-            transform: translate(0, 0);
+            -webkit-text-stroke: 0.1vw $celesob;
+            text-shadow:0vw 2vw 1vw $shadowtittleimg;
         }
     }
-
 }

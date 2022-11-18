@@ -147,7 +147,7 @@
   align-self: center;
   grid-area: cuerpo;
 }
-.contact fieldset {
+.contact__field {
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
   width: 55vw;
@@ -190,8 +190,8 @@ header {
   grid-area: titulo;
   padding-top: 2vw;
   padding-bottom: 2vw;
-  -webkit-animation: supernatural 2.5s;
-          animation: supernatural 2.5s;
+  -webkit-animation: supernatural 5s;
+          animation: supernatural 5s;
   transition-property: transform;
 }
 .supernatural__text__animacion a {
@@ -201,45 +201,71 @@ header {
   -webkit-text-stroke: inherit;
 }
 @-webkit-keyframes supernatural {
-  /* traslate (eje x, eje y) */
   0% {
-    transform: translate(-20vw, -8vw);
     text-shadow: 4vw 3vw rgba(44, 207, 222, 0.474);
+    color: rgb(255, 111, 0);
+    -webkit-text-stroke: 0.1vw rgb(243, 148, 6);
+    text-shadow: 1vw 1vw 8vw rgb(209, 148, 6), 0 0 1em rgb(221, 65, 22), 0 0 0.2em rgb(232, 103, 23);
   }
-  25% {
-    transform: translate(15vw, 6vw);
-    font-size: 8rem;
+  20% {
+    font-size: 6rem;
+    color: rgb(127, 93, 163);
+    -webkit-text-stroke: 0.1vw rgb(179, 156, 200);
+    text-shadow: 8vw 8vw 8vw rgb(136, 85, 199), 0 0 1em rgb(145, 68, 190), 0 0 0.2em rgb(19, 149, 236);
   }
-  50% {
-    transform: translate(-30vw, 3vw);
+  40% {
+    font-size: 6rem;
+    color: rgb(132, 11, 11);
+    -webkit-text-stroke: 0.1vw rgb(92, 5, 5);
+    text-shadow: 8vw 8vw 8vw rgb(105, 25, 25), 0 0 1em rgb(10, 2, 14), 0 0 0.2em rgb(140, 16, 16);
   }
-  75% {
-    transform: translate(25vw, -9vw);
-    text-shadow: 1vw 1vw 2vw rgb(241, 242, 245), 0 0 1em rgb(0, 255, 217), 0 0 0.2em rgb(0, 153, 255);
+  60% {
+    color: rgb(32, 38, 44);
+    -webkit-text-stroke: 0.1vw rgb(199, 202, 234);
+    text-shadow: 8vw 8vw 8vw rgb(25, 64, 105), 0 0 1em rgb(246, 249, 251), 0 0 0.2em rgb(251, 251, 251);
+  }
+  80% {
+    color: rgb(20, 69, 84);
+    -webkit-text-stroke: 0.1vw #0AE0F2;
+    text-shadow: 8vw 8vw 8vw rgb(0, 150, 244), 0 0 1em rgb(0, 255, 247), 0 0 0.2em rgb(4, 242, 255);
   }
   100% {
-    transform: translate(0, 0);
+    -webkit-text-stroke: 0.1vw #0f8893;
+    text-shadow: 0vw 2vw 1vw rgba(44, 207, 222, 0.474);
   }
 }
 @keyframes supernatural {
-  /* traslate (eje x, eje y) */
   0% {
-    transform: translate(-20vw, -8vw);
     text-shadow: 4vw 3vw rgba(44, 207, 222, 0.474);
+    color: rgb(255, 111, 0);
+    -webkit-text-stroke: 0.1vw rgb(243, 148, 6);
+    text-shadow: 1vw 1vw 8vw rgb(209, 148, 6), 0 0 1em rgb(221, 65, 22), 0 0 0.2em rgb(232, 103, 23);
   }
-  25% {
-    transform: translate(15vw, 6vw);
-    font-size: 8rem;
+  20% {
+    font-size: 6rem;
+    color: rgb(127, 93, 163);
+    -webkit-text-stroke: 0.1vw rgb(179, 156, 200);
+    text-shadow: 8vw 8vw 8vw rgb(136, 85, 199), 0 0 1em rgb(145, 68, 190), 0 0 0.2em rgb(19, 149, 236);
   }
-  50% {
-    transform: translate(-30vw, 3vw);
+  40% {
+    font-size: 6rem;
+    color: rgb(132, 11, 11);
+    -webkit-text-stroke: 0.1vw rgb(92, 5, 5);
+    text-shadow: 8vw 8vw 8vw rgb(105, 25, 25), 0 0 1em rgb(10, 2, 14), 0 0 0.2em rgb(140, 16, 16);
   }
-  75% {
-    transform: translate(25vw, -9vw);
-    text-shadow: 1vw 1vw 2vw rgb(241, 242, 245), 0 0 1em rgb(0, 255, 217), 0 0 0.2em rgb(0, 153, 255);
+  60% {
+    color: rgb(32, 38, 44);
+    -webkit-text-stroke: 0.1vw rgb(199, 202, 234);
+    text-shadow: 8vw 8vw 8vw rgb(25, 64, 105), 0 0 1em rgb(246, 249, 251), 0 0 0.2em rgb(251, 251, 251);
+  }
+  80% {
+    color: rgb(20, 69, 84);
+    -webkit-text-stroke: 0.1vw #0AE0F2;
+    text-shadow: 8vw 8vw 8vw rgb(0, 150, 244), 0 0 1em rgb(0, 255, 247), 0 0 0.2em rgb(4, 242, 255);
   }
   100% {
-    transform: translate(0, 0);
+    -webkit-text-stroke: 0.1vw #0f8893;
+    text-shadow: 0vw 2vw 1vw rgba(44, 207, 222, 0.474);
   }
 }
 
@@ -258,6 +284,12 @@ header {
   width: 3vw;
 }
 
+/* .sticky-top{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+} */
 /* h1 en index.html */
 .car__title {
   text-align: center;
@@ -423,6 +455,7 @@ main {
 /* componentes del "fieldset" de bootstrap en contactanos.hmtl */
 .mb-3 {
   padding: 2vw;
+  width: 100%;
 }
 
 .mb-3 textarea {
@@ -466,6 +499,7 @@ main {
   width: 2.5vw;
 }
 
+/* Media screen para celulares */
 @media screen and (max-width: 576px) {
   /* body de curiosidades.html */
   .padre__curo {
@@ -568,6 +602,114 @@ main {
   /* sección del footer: texto es foot__p p y .logos__img las imágenes de todos los html */
   .foot__p p {
     font-size: 0.9rem;
+  }
+  .logos__img {
+    margin-right: 2vw;
+    margin-top: 2vw;
+    width: 5vw;
+  }
+}
+/* Media screen para tablets en horizontal */
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  /* body de curiosidades.html */
+  .padre__curo {
+    grid-template-rows: 0.2fr 5fr 0.1fr;
+  }
+  /* navbar */
+  .navbar-brand img {
+    width: 6vw;
+  }
+  /* título del header en index.html*/
+  .supernatural__text__animacion {
+    font-size: 10vw;
+  }
+  /* título del header en todos los html excepto index.html*/
+  .supernatural__text {
+    font-size: 10vw;
+  }
+  /* Imagen de fondo del body */
+  main {
+    background-size: 76%;
+  }
+  /* h1 de index.html */
+  .car__title {
+    font-size: 7vw;
+  }
+  /* imágenes del carrusel index.html*/
+  .car__img {
+    width: 80%;
+  }
+  /* "cards" de index.html */
+  .p1 {
+    flex-direction: column;
+  }
+  .p1 img {
+    align-self: center;
+    width: 70%;
+  }
+  .p1 p {
+    padding: 3vw;
+    font-size: 3vw;
+  }
+  .p2 {
+    flex-direction: column;
+  }
+  .p2 img {
+    align-self: center;
+    width: 70%;
+  }
+  .p2 p {
+    padding: 3vw;
+    font-size: 3vw;
+  }
+  /* h1 de personajes/temporadas/curiosidades/contactanos.html */
+  .car__pages {
+    padding: 3vw;
+    font-size: 6vw;
+  }
+  /* h2 de personajes.html */
+  h2 {
+    font-size: 7vw;
+  }
+  /* "cards" de personajes.html */
+  .per1 {
+    flex-direction: column;
+  }
+  /* h4 de temporadas y curiosidades.html */
+  h4 {
+    font-size: 4vw;
+  }
+  /* "cards" de personajes.html */
+  .per__imgp {
+    flex-direction: column-reverse;
+  }
+  .per__imgp img {
+    width: 40%;
+    padding: 3vw;
+    margin: 0 auto;
+    border-radius: 5vw;
+  }
+  .per__imgp p {
+    font-size: 3vw;
+    text-align: start;
+  }
+  .p__tempo {
+    width: 90%;
+  }
+  .p__tempo p {
+    font-size: 3vw;
+  }
+  /* img de temporadas.html */
+  .img__tempo img {
+    width: 40%;
+  }
+  /* texto de curiosidades.html */
+  .p__curo p {
+    font-size: 3vw;
+  }
+  /* sección del footer: texto es foot__p p y .logos__img las imágenes de todos los html */
+  .foot__p p {
+    font-size: 1.2rem;
   }
   .logos__img {
     margin-right: 2vw;
