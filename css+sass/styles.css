@@ -284,12 +284,6 @@ header {
   width: 3vw;
 }
 
-/* .sticky-top{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1030;
-} */
 /* h1 en index.html */
 .car__title {
   text-align: center;
@@ -491,6 +485,7 @@ main {
   display: flex;
   flex-direction: row;
   list-style: none;
+  align-items: center;
 }
 .logos__li {
   padding: 1vw;
