@@ -71,11 +71,11 @@
 /* ubicado en contactanos.html */
 .contact{
     @include flex-column;
-    align-self: center;
-    background-color: $grisdegra;
-    border-radius: 1vw;
-    width: 50vw;
-    color: $griscla;
-    grid-area: cuerpo;
-    margin: 3vw;
+        background-color: $grisdegra;
+        border-radius: 1vw;
+        width: 55vw;
+        color: $griscla;
+        margin: 3vw;
+        align-self: center;
+        grid-area: cuerpo;
 }

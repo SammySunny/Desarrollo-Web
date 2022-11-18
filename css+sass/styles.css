@@ -144,13 +144,13 @@
 .contact {
   display: flex;
   flex-direction: column;
-  align-self: center;
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
-  width: 50vw;
+  width: 55vw;
   color: #aaaaaa;
-  grid-area: cuerpo;
   margin: 3vw;
+  align-self: center;
+  grid-area: cuerpo;
 }
 
 header {
