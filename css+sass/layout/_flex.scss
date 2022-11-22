@@ -74,11 +74,14 @@
         align-self: center;
         grid-area: cuerpo;
 
-    &__field{
-        background-color: $grisdegra;
-        border-radius: 1vw;
-        width: 55vw;
-        color: $griscla;
-        margin: 3vw;
+        &__formulario{
+            background-color: $grisdegra;
+            border-radius: 1vw;
+            width: 55vw;
+        }
+        &__field{
+            color: $griscla;
+            margin: 3vw;
+
     }
 }

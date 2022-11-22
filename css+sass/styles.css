@@ -147,10 +147,12 @@
   align-self: center;
   grid-area: cuerpo;
 }
-.contact__field {
+.contact__formulario {
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
   width: 55vw;
+}
+.contact__field {
   color: #aaaaaa;
   margin: 3vw;
 }
@@ -190,8 +192,8 @@ header {
   grid-area: titulo;
   padding-top: 2vw;
   padding-bottom: 2vw;
-  -webkit-animation: supernatural 5s;
-          animation: supernatural 5s;
+  -webkit-animation: supernatural 3s;
+          animation: supernatural 3s;
   transition-property: transform;
 }
 .supernatural__text__animacion a {
@@ -711,4 +713,20 @@ main {
     margin-top: 2vw;
     width: 5vw;
   }
+}
+/* ubicado en contactanos.html */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  grid-area: cuerpo;
+}
+.contact__formulario {
+  background-color: rgba(40, 44, 48, 0.8196078431);
+  border-radius: 1vw;
+  width: 55vw;
+}
+.contact__field {
+  color: #aaaaaa;
+  margin: 3vw;
 }/*# sourceMappingURL=styles.css.map */

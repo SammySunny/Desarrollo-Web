@@ -236,3 +236,20 @@ main{
             width: 5vw;
         }
     }
+/* ubicado en contactanos.html */
+.contact{
+    @include flex-column;
+        align-self: center;
+        grid-area: cuerpo;
+
+        &__formulario{
+            background-color: $grisdegra;
+            border-radius: 1vw;
+            width: 55vw;
+        }
+        &__field{
+            color: $griscla;
+            margin: 3vw;
+
+    }
+}
