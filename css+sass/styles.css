@@ -150,7 +150,7 @@
 .contact__formulario {
   background-color: rgba(40, 44, 48, 0.8196078431);
   border-radius: 1vw;
-  width: 55vw;
+  width: 70vw;
 }
 .contact__field {
   color: #aaaaaa;
@@ -607,7 +607,7 @@ main {
   }
 }
 /* Media screen para tablets en horizontal */
-@media screen and (max-width: 768px) and (min-width: 577px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   /* body de curiosidades.html */
   .padre__curo {
     grid-template-rows: 0.2fr 5fr 0.1fr;
@@ -713,20 +713,4 @@ main {
     margin-top: 2vw;
     width: 5vw;
   }
-}
-/* ubicado en contactanos.html */
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  grid-area: cuerpo;
-}
-.contact__formulario {
-  background-color: rgba(40, 44, 48, 0.8196078431);
-  border-radius: 1vw;
-  width: 55vw;
-}
-.contact__field {
-  color: #aaaaaa;
-  margin: 3vw;
 }/*# sourceMappingURL=styles.css.map */

@@ -120,8 +120,9 @@ main{
 
 
 
+
 /* Media screen para tablets en horizontal */
-@media screen and (max-width: 768px) and (min-width:577px){
+@media screen and (min-width:577px) and (max-width: 768px){
     /* body de curiosidades.html */
         .padre__curo{
             grid-template-rows: 0.2fr 5fr 0.1fr ;
@@ -236,20 +237,3 @@ main{
             width: 5vw;
         }
     }
-/* ubicado en contactanos.html */
-.contact{
-    @include flex-column;
-        align-self: center;
-        grid-area: cuerpo;
-
-        &__formulario{
-            background-color: $grisdegra;
-            border-radius: 1vw;
-            width: 55vw;
-        }
-        &__field{
-            color: $griscla;
-            margin: 3vw;
-
-    }
-}
